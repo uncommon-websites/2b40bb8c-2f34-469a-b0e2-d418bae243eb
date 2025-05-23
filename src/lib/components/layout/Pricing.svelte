@@ -37,83 +37,182 @@ Please update features according to the company's product offering. Do not remov
 	const {
 		title = "Simple, transparent pricing",
 		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		tierNames = ["Free", "Pro", "Team", "Enterprise"],
 		features = [
-			{
-				name: "Projects",
-				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Team members",
-				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Storage",
-				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "API access",
-				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Custom domains",
-				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Analytics",
-				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
-				}
-			},
-			{
-				name: "Support response time",
-				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
-				}
-			},
-			{
-				name: "Dedicated account manager",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: true
-				}
-			},
-			{
-				name: "SLA",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
-				}
-			}
-		],
+        {
+            name: "Available models",
+            tiers: {
+                Free: "Claude 4 Sonnet",
+                Pro: "Claude 4 Sonnet",
+                Team: "Claude 4 Sonnet (API add-on)",
+                Enterprise: "All Claude 4 models (API, Team, Workspace)"
+            }
+        },
+        {
+            name: "Context window",
+            tiers: {
+                Free: "Up to 32K tokens",
+                Pro: "Up to 200K tokens",
+                Team: "Up to 200K tokens",
+                Enterprise: "Up to 200K tokens"
+            }
+        },
+        {
+            name: "Claude Code access",
+            tiers: {
+                Free: true,
+                Pro: true,
+                Team: true,
+                Enterprise: true
+            }
+        },
+        {
+            name: "Claude apps & tools",
+            tiers: {
+                Free: false,
+                Pro: "Yes (Max plan)",
+                Team: true,
+                Enterprise: true
+            }
+        },
+        {
+            name: "API access",
+            tiers: {
+                Free: false,
+                Pro: false,
+                Team: "Optional add-on",
+                Enterprise: true
+            }
+        },
+        {
+            name: "Team collaboration",
+            tiers: {
+                Free: false,
+                Pro: false,
+                Team: true,
+                Enterprise: true
+            }
+        },
+        {
+            name: "Daily messaging & usage",
+            tiers: {
+                Free: "Fair use",
+                Pro: "Priority during high demand",
+                Team: "Shared/fair across members",
+                Enterprise: "Volume throughput via SLA"
+            }
+        },
+        {
+            name: "Admin controls",
+            tiers: {
+                Free: false,
+                Pro: false,
+                Team: true,
+                Enterprise: true
+            }
+        },
+        {
+            name: "Integrations (Google Workspace, web search)",
+            tiers: {
+                Free: false,
+                Pro: true,
+                Team: true,
+                Enterprise: "Custom options"
+            }
+        },
+        {
+            name: "Support level",
+            tiers: {
+                Free: "Community help center",
+                Pro: "Email priority support",
+                Team: "Account manager + team support",
+                Enterprise: "Dedicated support, SLA responses"
+            }
+        },
+        {
+            name: "Security & compliance",
+            tiers: {
+                Free: "Standard",
+                Pro: "Standard",
+                Team: "Team enhanced",
+                Enterprise: "Custom, SSO, audit, SOC 2"
+            }
+        }
+    ],
 		tiers = [
-			{
+        {
+            name: "Free",
+            monthlyPrice: 0,
+            yearlyPrice: 0,
+            description: "Explore Claude AI for light, individual use.",
+            features: [
+                "Claude 4 Sonnet access",
+                "Up to 32K tokens per conversation",
+                "Fair use messaging limits",
+                "Claude Code for quick assistance",
+                "Community help center"
+            ],
+            cta: {
+                label: "Try for free",
+                href: "https://claude.ai"
+            }
+        },
+        {
+            name: "Pro",
+            monthlyPrice: 20,
+            yearlyPrice: 18,
+            description: "For professionals who need more power and priority access.",
+            features: [
+                "Claude 4 Sonnet with higher usage",
+                "Up to 200K token context window",
+                "Claude Code included",
+                "Access to Claude apps (Max plan)",
+                "Priority during high demand",
+                "Email priority support"
+            ],
+            cta: {
+                label: "Upgrade to Pro",
+                href: "https://claude.ai"
+            },
+            highlight: true
+        },
+        {
+            name: "Team",
+            monthlyPrice: 30,
+            yearlyPrice: 27,
+            description: "Multi-seat AI, admin, and API options for businesses.",
+            features: [
+                "Shared usage, pooled limits",
+                "All Pro features for teams",
+                "Admin controls and billing",
+                "Integrations included",
+                "Optional API add-on",
+                "Team support & account manager"
+            ],
+            cta: {
+                label: "Start for teams",
+                href: "https://claude.ai"
+            }
+        },
+        {
+            name: "Enterprise",
+            monthlyPrice: null,
+            yearlyPrice: null,
+            description: "Custom plans, security, governance, and SLA for organizations.",
+            features: [
+                "All Claude 4 models across API and workspace",
+                "Custom usage & throughput",
+                "Advanced integrations & compliance",
+                "SSO, audit logging, SOC 2",
+                "Dedicated manager & support SLAs"
+            ],
+            cta: {
+                label: "Contact sales",
+                href: "https://www.anthropic.com/contact-sales"
+            }
+        }
+    ]
+        
 				name: "Starter",
 				monthlyPrice: 9.99,
 				yearlyPrice: 7.99, // 20% savings

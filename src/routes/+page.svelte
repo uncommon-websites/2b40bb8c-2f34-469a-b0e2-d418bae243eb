@@ -54,107 +54,121 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="Anthropic builds AI to serve humanity’s long-term well-being. Our Claude models help people research, code, and write—always prioritizing safety and responsibility."
 />
 
 <Testimonials
-	generating
-	testimonials={[
-		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
-			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image:
-				"https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-		},
-		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
-			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image:
-				"https://images.unsplash.com/photo-1600603405959-6d623e92445c?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-		},
-		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
-			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image:
-				"https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-		}
-	]}
+
+testimonials={[
+  {
+    name: "Leocadia Byrne",
+    position: "Lead software engineer",
+    company: "Crestfall Technologies",
+    quote:
+      "Claude reduced our debug cycles by half. I spend more time building and far less chasing bugs. That's hours back in my week.",
+    image: "/generated/image-middle-aged-woman-software-engineer-in-a.webp",
+  },
+  {
+    name: "Werner Callenbach",
+    position: "Research scientist",
+    company: "Helix Institute",
+    quote:
+      "We use Claude to pre-check data for compliance. It flagged two critical errors regulators would have caught. Risk dropped, and so did my stress.",
+    image: "/generated/image-older-male-research-scientist-in-a-labor.webp",
+  },
+  {
+    name: "Rowen Ibarra",
+    position: "Founder & CEO",
+    company: "Studio Motif",
+    quote:
+      "We save over $8,000 every quarter by replacing old content tools with Claude. And everything gets done faster than before.",
+    image: "/generated/image-younger-nonbinary-startup-founder-in-a-v.webp",
+  },
+]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
-	features={[
-		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
-		},
-		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
-		},
-		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
-		}
-	]}
+  title="AI designed for real-world responsibility"
+  subtitle="See how Claude supports your work, safely and transparently."
+  features={[
+    {
+      title: "Advanced Claude models",
+      description: "Claude family models handle nuanced writing, coding, and analysis while keeping your data private and secure.",
+    },
+    {
+      title: "Developer-friendly APIs",
+      description: "The Claude API offers high-availability endpoints and supports large inputs, so you can build fast, reliable AI products at scale.",
+    },
+    {
+      title: "Research leadership",
+      description: "Anthropic publishes research on interpretability, societal impacts, and alignment science—ensuring models are transparent and trustworthy.",
+    },
+    {
+      title: "Responsible scaling & safety",
+      description: "Built-in safeguards like constitutional AI, detailed evaluations, and responsible scaling policies keep models safe for every user.",
+    },
+    {
+      title: "Seamless business integration",
+      description: "Claude connects with Google Workspace and leading business tools, enabling real-time insights and collaboration anywhere you work.",
+    },
+    {
+      title: "AI for the long-term benefit of humanity",
+      description: "Every decision, from model training to deployment, is made with a clear goal: supporting people and creating tangible value for society.",
+    },
+  ]}
 />
 
 <UseCases
-	generating
-	title="Use Cases"
-	subtitle="Real-world applications for your business needs"
-	useCases={[
-		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings.",
-			image:
-				"https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-			link: {
-				href: "/use-cases/workflows",
-				label: "Learn more"
-			}
-		},
-		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2488&q=80",
-			link: {
-				href: "/use-cases/data-analysis",
-				label: "Explore analytics"
-			}
-		},
-		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption.",
-			image:
-				"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-			link: {
-				href: "/use-cases/collaboration",
-				label: "See security features"
-			}
-		}
-	]}
+  title="Use Cases"
+  subtitle="Real-world applications for your business needs"
+  useCases={[
+    {
+      title: "AI pair programmer for dev teams",
+      description: "Claude Code helps developers write, debug, and document faster—with inline suggestions and language support across multiple frameworks.",
+      image: "/generated/image-a-developer-in-a-modern-office-space-sur.webp",
+      link: {
+        href: "/use-cases/ai-pair-programmer",
+        label: "Learn more"
+      }
+    },
+    {
+      title: "Research assistant for complex analysis",
+      description: "Use Claude Opus 4 to summarize papers, compare arguments, and generate structured insights from dense technical content.",
+      image: "/generated/image-a-business-professional-in-a-sleek-conte.webp",
+      link: {
+        href: "/use-cases/research-assistant",
+        label: "Learn more"
+      }
+    },
+    {
+      title: "Writing support for business workflows",
+      description: "Quickly draft copy, outlines, and customer-facing content—right inside Google Docs—with Claude’s Workspace integrations included in the Max plan.",
+      image: "/generated/image-a-writer-in-a-cozy-home-office-setting-w.webp",
+      link: {
+        href: "/use-cases/writing-support",
+        label: "Learn more"
+      }
+    }
+  ]}
 />
 
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+  title="AI you can trust. Help when you need it."
+  subtitle="Built for people, built for impact"
+  description="Claude is fast, helpful, and easy to work with. Whether you’re building an agent, exploring ideas, or shipping code, Claude helps you move smarter and quicker."
+  imageSrc="/generated/image-a-cheerful-software-developer-with-a-joy.webp"
+  callsToAction={[
+    {
+      href: "/get-started",
+      label: "Try Claude",
+      variant: "primary"
+    },
+    {
+      href: "/contact",
+      label: "Talk to our team",
+      variant: "secondary"
+    }
+  ]}
+/>

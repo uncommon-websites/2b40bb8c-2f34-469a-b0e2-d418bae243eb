@@ -64,45 +64,29 @@ export const navigation: NavItem[] = [
 		showInFooter: true,
 		children: [
 			{
-				label: "Healthcare",
-				href: "/use-cases/healthcare",
-				image:
-					"https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=1920&auto=format&fit=crop",
-
-				description:
-					"Innovative solutions for patient care, delivering advanced analytics to improve diagnostics, enhancing personalized treatment plans through real‑time data insights, and seamlessly integrating with existing healthcare systems to drive better outcomes and streamline clinical workflows",
-				showInNav: true,
-				showInFooter: true
-			},
-			{
-				label: "Finance",
-				href: "/use-cases/finance",
-				image:
-					"https://images.unsplash.com/photo-1638913662180-afc4334cf422?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-				description:
-					"Streamlining operations and compliance across financial services by automating regulatory reporting, strengthening risk management, integrating advanced real‑time analytics, and ensuring robust audit trails for enhanced governance and operational efficiency",
-				showInNav: true,
-				showInFooter: true
-			},
-			{
-				label: "Technology",
-				href: "/use-cases/technology",
-				image:
-					"https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-				description:
-					"Cutting-edge tools for tech companies, offering scalable cloud-based platforms, AI-driven development frameworks, secure collaboration environments, and streamlined deployment pipelines to accelerate innovation and deliver market-leading solutions",
-				showInNav: true,
-				showInFooter: true
-			},
-			{
-				label: "Education",
-				href: "/use-cases/education",
-				image:
-					"https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-				description: "Enhancing learning experiences",
-				showInNav: true,
-				showInFooter: true
-			}
+        label: "AI pair programmer for dev teams",
+        href: "/use-cases/ai-pair-programmer",
+        image: "/generated/image-a-developer-in-a-modern-office-space-sur.webp",
+        description: "Claude Code helps developers write, debug, and document faster—with inline suggestions and language support across multiple frameworks.",
+        showInNav: true,
+        showInFooter: true
+      },
+      {
+        label: "Research assistant for complex analysis",
+        href: "/use-cases/research-assistant",
+        image: "/generated/image-a-business-professional-in-a-sleek-conte.webp",
+        description: "Use Claude Opus 4 to summarize papers, compare arguments, and generate structured insights from dense technical content.",
+        showInNav: true,
+        showInFooter: true
+      },
+      {
+        label: "Writing support for business workflows",
+        href: "/use-cases/writing-support",
+        image: "/generated/image-a-writer-in-a-cozy-home-office-setting-w.webp",
+        description: "Quickly draft copy, outlines, and customer-facing content—right inside Google Docs—with Claude’s Workspace integrations included in the Max plan.",
+        showInNav: true,
+        showInFooter: true
+      }
 		]
 	},
 	{
