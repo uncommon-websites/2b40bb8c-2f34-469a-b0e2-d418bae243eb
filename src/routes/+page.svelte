@@ -12,7 +12,7 @@
 
 <CustomerCardHero
   centered={true}
-  title="Safe tools for complex thinking"
+  title="Safe tools for complex thinking."
   subtitle="Claude helps you write, solve, and build—designed with care to support your work and humanity’s long-term well-being."
   customers={[
     {
