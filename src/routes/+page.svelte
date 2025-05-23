@@ -7,16 +7,51 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+  centered={true}
+  title="Safe tools for complex thinking"
+  subtitle="Claude helps you write, solve, and build—designed with care to support your work and humanity’s long-term well-being."
+  customers={[
+    {
+      name: 'Erica',
+      position: 'Software engineer',
+      imageSrc: '/generated/image-a-professional-woman-coder-in-a-modern-w.webp',
+    },
+    {
+      name: 'Ravi',
+      position: 'Policy researcher',
+      imageSrc: '/generated/image-a-professional-man-in-a-formal-shirt-sit.webp',
+    },
+    {
+      name: 'Laura',
+      position: 'Marketing manager',
+      imageSrc: '/generated/image-a-professional-woman-smiling-in-a-bright.webp',
+    },
+    {
+      name: 'James',
+      position: 'Product strategist',
+      imageSrc: '/generated/image-a-professional-man-with-glasses-sitting-.webp',
+    },
+    {
+      name: 'Maya',
+      position: 'Novelist',
+      imageSrc: '/generated/image-a-woman-writer-in-a-cozy-indoor-setting-.webp',
+    },
+  ]}
 />
-<LogoScroller label="" generating />
+
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		"https://logo.clearbit.com/openai.com",
+		"https://logo.clearbit.com/microsoft.com",
+		"https://logo.clearbit.com/stripe.com",
+		"https://logo.clearbit.com/zapier.com"
+	]}
+/>
 
 <Summary
 	generating
